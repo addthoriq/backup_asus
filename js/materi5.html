@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Materi 5</title>
+	</head>
+	<body>
+		<script>
+			var jawab = prompt("Silahkan Pilih pelajaran yang anda inginkan dengan memasukkan angka 1 hingga 5");
+			var pelajaran = "";
+			switch(jawab){
+				case "1":
+					pelajaran = "PHP";
+					break;
+				case "2":
+					pelajaran = "CSS";
+					break;
+				case "3":
+					pelajaran = "HTML";
+					break;
+				case "4":
+					pelajaran = "JavaScript";
+					break;
+				case "5":
+					pelajaran = "Corel";
+					break;
+				default:
+					document.write("<p>Oopss!! anda Salah pilih</p>");
+			}
+			if (pelajaran === ""){
+				document.write("<p>Kamu gagal memilih pelajaran</p>");
+			} else {
+				document.write("<h2>Selamat kamu telah memilih " + pelajaran + "</h2>");
+			}
+		</script>
+	</body>
+</html>

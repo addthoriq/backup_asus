@@ -1,0 +1,113 @@
+<html>
+ <head>
+  <title>TUGAS WD FORM</title>
+ </head>
+ <body>
+ <div align="center">
+ <table border="1" bordercolor="red">
+  <tr>
+  <td><h1 style="text-align:center">Form Input Biodata</h1></td>
+  </tr>
+  <tr>
+  <td><form>
+   <table>
+    <tr>
+	<tr height="10">
+	<td><td>
+	</tr>
+     <td>
+      <label for="nama">Nama Lengkap</label></td>
+      <td>:</td>
+      <td><input type="text" size="30" name="nama" id="nama" placeholder="Masukkan Nama"></input></td>
+    </tr>
+    	<tr height="10">
+    	<td></td>
+    	</tr>
+    <tr>
+     <td><label for="ttl">Tempat, Tanggal Lahir</label></td>
+     <td>:</td>
+     <td><input type="text" size="30" name="ttl" id="ttl"/></td>
+     <td>,</td>
+     <td><input type="text" size="4" name="tgl" id="tgl" placeholder="Tanggal"/></td>
+     <td>/</td>
+     <td><input type="text" size="4" name="bln" id="bln" placeholder="Bulan"/></td>
+     <td>/</td>
+     <td><input type="text" size="10" name="tahun" id="tahun" placeholder="Tahun"/></td>
+    </tr>
+    	<tr height="10">
+    	<td></td>
+    	</tr>
+    <tr>
+     <td><label for="alamat">Alamat</label></td>
+     <td>:</td>
+     <td colspan="7"><textarea name="alamat" id="alamat" style="margin: 0px; width: 507px; height: 70px;"></textarea></td>
+    </tr>
+    	<tr height="10">
+    	<td></td>
+    	</tr>
+    <tr>
+     <td>
+     <label for="nomor">No. Telp/HP</label>
+     <td>:</td>
+     <td><input type="text" size="30" name="nomor" id="nomor"/></td>
+    </tr>
+	<tr height="10">
+	<td></td>    
+	</tr>
+    <tr>
+      <td><label for="jkl">Jenis Kelamin</label></td>
+      <td>:</td>
+      <td><input type="radio" name="jlk" id="laki" value="laki"/>
+      <label for="laki">Laki-Laki</label>
+      <input type="radio" name="jlk" id="pr" value="pr"/>
+      <label for="pr">Perempuan</label>
+    </tr>
+	<tr height="10">
+	<td></td>    
+	</tr>
+    <tr>
+     <td>
+     <label for="agama">Agama</label></td>
+     <td>:</td>
+     <td><select name="agama" id="agama"/>
+		<option value="">--Pilih Agama--</option>
+		<option value="islam">Islam</option>
+		<option value="kristen">Kristen</option>
+		<option value="katolik">Katolik</option>
+		<option value="budha">Budha</option>
+		<option value="konghucu">Konghucu</option>
+		<option value="hindu">Hindu</option>
+     </select></td>
+    </tr>
+	<tr height="10">
+	<td></td>
+	</tr>
+    <tr>
+     <td><label for="hobi">Hobi</label></td>
+     <td>:</td>
+     <td colspan="10">
+      <input type="checkbox" name="bacabuku" id="bacabuku" value="bacabuku"/>
+         <label for="bacabuku">Baca Buku</label>
+      <input type="checkbox" name="hobi" id="olahraga" value="olahraga"/>
+	 <label for="olahraga">Olahraga</label>
+      <input type="checkbox" name="hobi" id="hiking" value="hiking"/>
+	 <label for="hiking">Hiking</label>
+      <input type="checkbox" name="maingame" id="maingame" value="maingame"/>
+	 <label for="maingame">Main Game</label>
+    </tr>
+	<tr height="30">
+	<td><td>
+	</tr>
+    <tr>
+     <td></td>
+     <td></td>
+     <td><input type="submit" name="submit" value="Submit"/>
+   <input type="reset" name="reset" value="Clear!"/></td>
+    </tr>
+   </table>
+   </td></form>
+   </tr>
+  </table>
+  </div>
+ </body>
+</html>

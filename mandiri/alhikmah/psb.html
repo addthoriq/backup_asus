@@ -1,0 +1,237 @@
+<html>
+	<head>
+		<title>PENERIMAAN SANTRI BARU</title>
+		<link rel="shortcut icon" href="logoah.jpg"/>
+		<link rel="stylesheet" type="text/css" href="navigasi.css"/>
+		<style rel="text/css">
+			nav ul li.active a{ /* menu aktif */
+				padding: 25px 20px 25px 20px;
+				background-color: #ffffff;
+				color: #30822d;
+			}
+			
+			/* Page 5 */
+			.gambar-psb{
+				background-image: url("upcr2.jpg");
+				background-size: 1500px;
+				background-position: center;
+				height: 600px;
+				margin-top: 80px;
+			}
+			.page1 .isi-page1{
+				right: 3%;
+				position: absolute;
+				color: #ffffff;
+				font: 24px Sans-Serif;
+				text-align: right;
+				margin-top: 50px;
+			}
+			.page1 .isi-page1 h1{
+				font: 48px Sans-Serif;
+				text-transform: uppercase;
+				text-align: right;
+				font-weight: bold;
+			}
+			
+			/* Tombol daftar daftar */
+			.tombol-psb{
+				right: 5%;
+				position: absolute;
+				background-color: #30822d;
+				border-radius: 8px;
+				border: none;
+				width: 230px;
+				height: 60px;
+				cursor: pointer;
+				transition-duration: 0.5s;
+				display: inline-block;
+				margin-top: 400px;
+			}
+			.tombol-psb:hover{
+				background-color: #46bc42;				
+			}
+			.tombol-psb a{
+				font: 20px Sans-Serif;
+				text-align: center;
+				color: #ffffff;
+				text-decoration: none;
+				padding: 18px 35px;
+				margin: 0px;
+			}
+
+			.form{
+				border: 1px solid;
+				height: 1000px;
+			}
+			table{
+				margin: 200px 0px;
+				font-family: Sans-Serif;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+	<!-- Page 1 -->
+		<div class="page1">
+		<div class="isi-page1">
+				<h1>segera daftarkan putra-putri anda</h1>
+				<h1>di ppit al hikmah, boyolali</h1>
+				<p>Pondok Pesantren Islam Terpadu (PPIT) Al Hikmah, Karanggede-Boyolali<br>Telah membuka Pendaftaran Santri Baru tahun ajaran 2019/2020<br>Pendaftaran dibuka dari 22 Oktober hingga 10 November 2018</p>
+		</div>	
+		<button type="submit" class="tombol-psb"><a href="psb.html" target="_blank">Daftar Sekarang</a></button>
+		<div class="gambar-psb"></div>
+		</div>
+	
+	<!-- Page 2 -->
+	<div class="form">
+		<div class="isi-form">
+			<form action="" method="post">
+			<center>
+			<table border=1>
+			
+				<tr>
+					<td><label for="nama_lengkap">Nama Lengkap</label></td>
+					<td>:</td>
+					<td><input type="text" size=35 name="nama_lengkap" id="nama_lengkap"/></td>
+				</tr>
+				<tr>
+					<td><label for="nama_panggilan">Nama Panggilan</label></td>
+					<td>:</td>
+					<td><input type="text" size=35 name="nama_panggilan" id="nama_panggilan"/></td>
+				</tr>
+				<tr>
+					<td><label for="tanggal_lahir">Tanggal Lahir</label></td>
+					<td>:</td>
+					<td><input type="date" name="tanggal_lahir"/></td>
+				</tr>
+				<tr>
+					<td><label for="alamat">Alamat</label></td>
+					<td>:</td>
+					<td><textarea cols=35 rows=5 name="alamat" id="alamat"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+					<td>:</td>
+					<td><input type="radio" name="jenis_kelamin" id="laki_laki" value="laki_laki"/><label for="laki_laki">Laki-laki</label>
+					<input type="radio" name="jenis_kelamin" id="perempuan" value="perempuan"/><label for="perempuan">Perempuan</label></td>
+				</tr>
+				<tr>
+					<td><label for="hafalan">Jumlah Hafalan</label></td>
+					<td>:</td>
+					<td><select name="hafalan" id="hafalan">
+							<option value="">Jumlah Hafalan</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+						</select> Juz
+					</td>
+				</tr>
+				<tr>
+					<td><label for="lanjut">Pendidikan<br>Selanjutnya</label></td>
+					<td>:</td>
+					<td><input type="radio" name="lanjut" id="jenjang_mts" value="jenjang_mts"/><label for="jenjang_mts">MTsT Al Hikmah</label>
+					<input type="radio" name="lanjut" id="jenjang_sma" value="jenjang_sma"/><label for="jenjang_sma">SMAIT Al Hikmah</label></td>
+				</tr>
+				<tr>
+					<td><label for="asal_sekolah">Asal Sekolah</label></td>
+					<td>:</td>
+					<td><input type="text" size=35 name="asal_sekolah" id="asal_sekolah" placeholder="cth: SDIT Al Hikmah, Boyolali"/></td>
+				</tr>
+				<tr>
+					<td><label for="ayah">Nama Ayah</label></td>
+					<td>:</td>
+					<td><input type="text" size=35 name="ayah" id="ayah"/></td>
+				</tr>
+				<tr>
+					<td><label for="ibu">Nama Ibu</label></td>
+					<td>:</td>
+					<td><input type="text" size=35 name="ibu" id="ibu"/></td>
+				</tr>
+				<tr>
+					<td><label for="saudara">Anak ke</label></td>
+					<td>:</td>
+					<td><input type="text" size=5 name="saudara" id="saudara"/> ,
+					 dari <input type="text" size=5 name="sodara"/> bersaudara
+					</td>
+				</tr>
+				<tr>
+					<td><label for="alasan">Alasan mendaftar <br>di PPIT Al Hikmah</label></td>
+					<td>:</td>
+					<td><textarea cols=35 rows=5 name="alasan" id="alasan"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="kenal">Tau informasi<br>PSB PPIT Al Hikmah<br>dari</label></td>
+					<td>:</td>
+					<td><input type="radio" name="kenal" id="internet" value="internet"/><label for="internet">Internet</label>
+					<input type="radio" name="kenal" id="alumni" value="alumni"/><label for="alumni">Alumni</label>
+					<input type="radio" name="kenal" id="radio" value="radio"/><label for="radio">Radio</label>
+					<input type="radio" name="kenal" id="keluarga" value="keluarga"/><label for="keluarga">Keluarga</label>
+					</td>
+				</tr>
+
+			</table>
+			</center>
+			</form>
+		</div>
+	</div>	
+			<!-- Footer -->
+		<div class="footer">
+				<h1>www.popistra.com</h1>
+				<p><i>created by: addthoriq</i></p>
+		</div>
+
+		<!-- MENU NAVIGASI -->
+			<center>
+			<nav>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li class="dropdown"><a href="#page2" id="unit">informasi</a>
+						<div class="konten">
+							<a href="ponpes.html">info ponpes</a>
+							<a href="sma.html">info sma it</a>
+							<a href="mts.html">info mts t</a>
+						</div>
+					</li>
+					<li class="dropdown"><a href="#page3">capaian tahfidz</a>
+						<div class="konten">
+							<a href="santriwan.html">santriwan</a>
+							<a href="santriwati.html">santriwati</a>
+						</div>
+					</li>
+					<li><a href="#page4">galeri foto</a></li>
+					<li class="active"><a href="#page5">pendaftaran santri baru</a></li>
+					<li><a href="#page6">kontak kami</a></li>
+				</ul>
+			</nav>
+			</center>
+	
+	</body>
+</html>

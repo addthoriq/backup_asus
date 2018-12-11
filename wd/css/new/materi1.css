@@ -1,0 +1,39 @@
+		body {
+			background: powderblue;
+			}
+
+		p {
+			background: white;
+			}
+
+		p:hover {
+			background: green;
+			font-style: italic;
+			color: yellow;
+			}
+
+		a {
+			color: red;
+			text-decoration: none;
+			}
+		
+		a:hover {
+			background: blue;
+			color: yellow;
+			text-decoration: none;
+			}
+
+
+
+		/*#header {
+				background-color: red;
+				color: white;
+			}
+			.biru {
+				color: blue;
+				font-size: 15px;
+			}
+			#judul {
+				font-style: italic;
+			} */
+

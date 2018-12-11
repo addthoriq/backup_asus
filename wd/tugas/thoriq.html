@@ -1,0 +1,135 @@
+<html>
+<!-- THORIQ -->
+
+	<head>
+		<title>TUGAS CSS DROPDOWN</title>
+		<style>
+		
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+						/* Isi CSS*/
+			#header{
+				margin: 5px auto;
+				font: 18px Sans-Serif;
+				font-weight: bold;
+				width: 1310px;
+				height: 60px;
+				border-radius: 10px;
+				background-image: linear-gradient(#23af27,#127215); /*(Atas,Bawah)*/
+			}
+			#header ul{
+				background-color: #127215;
+			}
+			#header #menu li{ /* div ul li*/
+				display: block; /*mendisplaykan li ke samping*/	
+				float: left;
+				position: relative;
+				margin: 20px 0px;
+			}
+			#header #menu li a{
+				text-decoration: none;
+				text-transform: uppercase;
+				margin: 0px;
+				padding: 20px 60px;
+				color: #ffffff;
+			}
+			#header #menu a:hover{
+				background-image: linear-gradient(#127215,#23af27); /*(Atas,Bawah)*/
+			}
+			/* Menu Active nya */
+			#header #menu li.active a{
+				background-image: linear-gradient(#ffffff,#ffffff);
+				color: #23af27;
+				margin-left: 15px;
+				padding: 10px 40px;
+				border-radius: 6px;
+			}	
+			/* Menyembunyikan Konten */
+			.dropdown .konten{
+				display: none;
+				margin-top: 18px;
+				background-color: #23af27;
+			}
+			/* Isi konten dropdown */
+			#header #menu .dropdown .konten a{
+				display: block;
+				margin: 0px;
+				padding: 8px;
+			}
+			/* Memunculkan Dropdown di line 43 */
+			.dropdown:hover .konten{
+			display: block;
+			background-image: linear-gradient(#127215,#127215);
+			}
+		</style>
+	</head>
+	
+	<body>
+		<nav id="header">
+			<ul id="menu">
+				<li class="active"><a href="./">home</a></li>
+				
+				<!-- DROPDOWN -->
+				<li class="dropdown"><a href="us.html">about us</a>
+					<div class="konten">
+						<a href="profile.html" class="drop">Profile</a>
+						<a href="testimoni.html" class="drop">testimoni</a>
+						<a href="contact.html" class="drop">contact us</a>
+					</div>
+				</li>
+				
+				<li><a href="service.html">service</a></li>
+				<li><a href="solusi.html">solutions</a></li>
+				<li><a href="Portofolio.html">portofolio</a></li>
+			</ul>
+		</nav>
+	</body>
+	
+</html>

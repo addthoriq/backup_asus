@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>Belajar CSS</title>
+		<style>
+			body{
+				margin: 0;
+			}
+			#baliho{
+				width:100%;
+				background-color: #e8e8e8;
+				padding: 0px;
+				margin: auto;
+				color: #565656;
+				text-align: center;
+			}
+			.navatas{
+				background-image: linear-gradient(#0bc616,#06870d);/*(#Gelap,#Terang)*/
+				padding: 15px;
+			}
+			.navatas a{
+				text-decoration: none;
+				text-transform: uppercase;
+				font: 18px Sans Serif;
+				color: #ffffff;
+				padding: 15px;
+			}
+			.navatas a:hover{
+				background-image: linear-gradient(#06870d,#0bc616);
+				color: #ffffff;
+				padding: 15px;
+			}
+			.navatas .dropdown{
+				position: relative;
+				display: inline-table;
+			}
+			.navatas .dropdown .konten{
+				display: none;
+				background-color: #06870d;
+				position: absolute;
+			}
+			.dropdown:hover .konten{
+				display: block;
+			}
+			.isi .menukiri{
+				float: left;
+				background-color: #0bc616;
+				margin: 0px;
+				width: 25%;
+				height: 20%;
+			}
+			.isi .menukiri .menupsb{
+			size: 10px;
+			color: #ffffff;
+			padding: 10px;
+			margin: auto;
+			}
+			.isi .menukiri .menupsb .gambare{
+				float: left;
+				margin: 40px 5px;
+				padding: 100px 5px;
+				background-color: #000000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="baliho">
+			<img src="http://ponpes-alhikmah.org/wp-content/uploads/2016/11/INTERNET.jpg"/>
+		</div>
+	
+		<nav class="navatas">
+			<a href="./">Home</a>
+			<div class="dropdown">
+				<a href="javascript:void(0)">Unit</a>
+					<div class="konten">
+						<a href="#">Ponpes</a>
+						<a href="#">SMA IT</a>
+						<a href="#">MTs T</a>
+					</div>
+			</div>
+			<a href="#">Capaian Tahfidz</a>
+			<a href="#">Galeri Foto</a>
+			<a href="#">Download</a>
+			<a href="#">Kontak Kami</a>
+			<a href="#">Info PSB</a>
+		</nav>
+
+		<div class="isi">
+			<div class="menukiri">
+				<a class="menupsb">PSB 2019</a>
+				<div class="gambare">
+					<img src="http://ponpes-alhikmah.org/wp-content/uploads/2018/10/PSB-PPIT-Alhikmah-Boyolali-2019-Jalur-Khusus-Prestasi.jpg" width=75% class="gbrpsb"/>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

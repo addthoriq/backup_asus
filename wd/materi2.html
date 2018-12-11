@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Bikin Menu</title>
+	</head>
+	<style>
+		div{
+			border: 1px solid;
+			width: 100%;
+			margin: auto;
+			margin-top:20px;
+			margin: 20px auto 0;
+		}
+
+		div li{
+		border: 1px solid;
+			display: block;
+			float: left;
+		}
+		div li a{
+		border: 1px solid;
+			display: block;
+			padding-top: 15px;
+			padding-right: 40px;
+			padding-left: 40px;
+			padding-bottom: 15px;
+			/*padding: 15px 40px 15px 40px; atas kanan bawah kiri;
+			background-color:#1350b2;*/
+			background-image: linear-gradient(#175e82,#3ea8dd);
+			border:1px solid #2d74e5;
+			border-right-color:#6698e8;
+			letter-spacing:1px;
+			text-decoration: none; /*menghilangkan underskor nya*/
+			text-transform:uppercase;
+			color:#ffffff;
+		}
+		div li a:hover{
+			background-image: linear-gradient(#3ea8dd,#175e82);
+		}
+		div li.active a{
+			background-image: linear-gradient(#0b64ef,#224d91);			
+		}
+	</style>
+	<body>
+		<div id="header">
+		<ul>
+			<li class="active"><a href="./">Home</a></li>
+			<li><a href="portofolio.html">Portofolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="social.html">Social</a></li>
+		</ul>
+		</div>
+	</body>
+</html>

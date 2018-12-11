@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Login Mukabuku</title>
+		<!--<link rel="stylesheet" type="text/css" href="tampilan.css"/>-->
+	</head>
+		
+	<body>
+		<table>
+			<form action="proses.php" method="POST">
+				
+				<tr>
+				<td><label for="nama">Nama Lengkap</label></td>
+				<td>:</td>
+				<td><input type="text" size=30 name="nama" id="nama" placeholder="Nama Lengkap"/></td>
+				</tr>
+
+				<tr>
+				<td><label for="panggilan">Nama Panggilan</label></td>
+				<td>:</td>
+				<td><input type="text" size=30 name="panggilan" id="panggilan" placeholder="Nama Panggilan"/></td>
+				</tr>
+
+				<tr>
+				<td><label for="tempat">Tempat, Tanggal Lahir</label></td>
+				<td>:</td>
+				<td><input type="text" size=30 name="tempat" id="tempat" placeholder="Tempat Lahir"/></td>
+				<td><label for="tgl">,</label></td>
+				<td><input type="text" size=5 name="tgl" id="tgl" placeholder="Tanggal"></input></td>
+				<td><label for="bln">/</label></td>
+				<td><input type="text" size=5 name="bln" id="bln" placeholder="Bulan"></input></td>
+				<td><label for="thn">/</label></td>
+				<td><input type="text" size=5 name="thn" id="thn" placeholder="Tahun"></input></td>
+				</tr>
+
+ 	 			<tr> 
+				<td><label for="alamat">Alamat</label></td>
+				<td>:</td>
+				<td><textarea type="text" name="alamat" id="alamat"></textarea></td>
+				</tr>
+
+				<tr>
+				<td>Nomor Hape</td>
+				<td>:</td>
+				<td><select name="kode" id="kode">
+						<option value="kn">Kode Negara</option>
+						<option value="966">+966 (Arab Saudi)</option>
+						<option value="62">+62 (Indonesia)</option>
+						<option value="81">+81 (Jepang)</option>
+						<option value="60">+80 (Malaysia)</option></select>
+				<input type="text" size=13 name="nomor" id="nomor" placeholder="ex: 81254022887"/></td>
+				</tr>
+				
+				<tr>
+				<td name="gender">Jenis Kelamin</td>
+				<td>:</td>
+				<td><input type="radio" name="laki" id="laki" value="laki"/>
+				<label for="laki">Laki-Laki</label>
+				<input type="radio" name="pr" id="pr" value="pr"/>
+				<label for="pr">Perempuan</label>	</td>
+				</tr>
+
+				<tr>
+				<td><label for="email">Email</label></td>
+				<td>:</td>
+				<td><input type="text" size=30 name="email" id="email" placeholder="ex: abcd@kmail.com"/>
+				</tr>
+
+				<tr>
+				<td><label for="pass">Password</label></td>
+				<td>:</td>
+				<td><input type="password" size="30" name="pass" id="pass"/></td>
+				</tr>
+
+				<tr>
+				<td><label for="konfirmasi">Konfirmasi Password</label></td>
+				<td>:</td>
+				<td><input type="password" size="30" name="konfirmasi" id="konfirmasi"/></td>
+				</tr>
+
+				<tr>
+				<td></td>
+				<td></td>
+				<td><input type="submit" name="submit" value="Kirim!"/></td>
+				</tr>
+				
+			</form>
+		</table>
+	</body>
+</html>

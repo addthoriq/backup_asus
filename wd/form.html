@@ -1,0 +1,68 @@
+<html>
+ <head>
+  <title>FORM WEB DESAIN</title>
+ </head>
+ <body>
+  Form tanpa tabel<br>
+  <form>
+   <label for="nama">Nama</label>
+   <input type="text" size="30" name="nama" id="nama"></input><br>
+   <label for="alamat">Alamat</label>
+   <input type="text" size="50" name="alamat" id="alamat"></input><br>
+  </form>
+  Form dengan tabel<br>
+  <form>
+   <table>
+    <tr>
+     <td>
+   <label for="nama">Nama</label></td>
+   <td><input type="text" size="30" name="nama" id="nama"></input></td>
+    </tr>
+    <tr>
+     <td>
+   <label for="alamat">Alamat</label></td>
+   <td><input type="text" size="50" name="alamat" id="alamat"></input></td>
+    </tr>
+   </table>
+  </form>
+  Form panjang
+  <form>
+   <label for="pesan">Pesan</label><br>
+   <textarea name="pesan" cols="30" row="4"></textarea><br/>
+
+   <label for="daerah">Daerah</label>
+   	<select name="pulau" id="pulau">
+		<option value="">--Pilih Pulau--</option>
+		<option value="jawa">Jawa</option>
+		<option value="kalimantan">Kalimantan</option>
+		<option value="sumatra">Sumatra</option>
+		<option value="sulawesi">Sulawesi</option>
+   </select>
+  </form>
+  <form>
+  Jenis Kelamin:
+	<input type="radio" name="jkl" id="pria" value="pria"/>
+	 <label for="pria">Pria</label>
+	<input type="radio" name="jkl" id="wanita" value="wanita"/>
+	 <label for="wanita">Wanita</label>
+  </form>
+  <form>
+	Hoby:
+	<input type="checkbox" name="hoby" id="bacabuku" value="baca buku"/>
+		<label for="bacabuku">Baca Buku</label>
+	<input type="checkbox" name="hoby" id="olahraga" value="olahraga"/>
+		<label for="olahraga">Olahraga</label>
+	<input type="checkbox" name="hoby" id="hiking" value="viking"/>
+		<label for="hiking">Hiking</label>
+	<input type="checkbox" name="hoby" id="maingame" value="main game"/>
+		<label for="maingame">Main Game</label>
+  </form>
+  <form>
+   <label for="password">Password</label>
+	<input type="password" name="password" id="password"/>
+	  <br/><br/>
+	<input type="submit" name="submit" value="kirim"/>
+	<input type="reset" name="reset" value="ulang"/>
+  </form>
+ </body>
+</html>

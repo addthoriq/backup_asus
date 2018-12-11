@@ -1,0 +1,5 @@
+method JS:
+	1. console.log()
+	2. alert()
+	3. document.write()
+	4. innerHTML

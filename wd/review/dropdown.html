@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>REVIEW</title>
+		<style>
+			.button{
+				background-color: red;
+				color: #ffffff;
+				border: none;
+				cursor: pointer;
+				padding: 20px;
+				margin-top: 10px;
+				font-weight: bold;
+				text-transform: uppercase;
+				border-radius: 5px;
+			}
+			.menu{
+				position: relative;
+				display: inline-block;
+				text-transform: uppercase;
+			}
+			
+			/* UNTUK MENYEMBUNYIKAN ISI DROPDOWN */
+			.drop-konten{
+				display: none;
+				background: black;
+				min-width: 200px;
+				border-radius: 5px;
+			}
+			
+			/* UNTUK MENGUBAH STYLE ISI DROPDOWN */			
+			.drop-konten a{
+				color: white;
+				padding: 20px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			/* UNTUK MEMUNCULKAN ISI DROPDOWN */
+			.menu:hover .drop-konten{
+				display: block;
+			}
+			
+			/* UNTUK MEMBERIKAN HOVER PADA ISI DROPDOWN */			
+			.drop-konten a:hover{
+				background-color: green;
+				border-radius: 5px;	
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="menu">
+			<button class="button">hover dropdown</button>
+			<div class="drop-konten">
+				<a href="#">menu 1</a>
+				<a href="#">menu 2</a>
+				<a href="#">menu 3</a>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+Nama Lengkap = nama_lengkap
+Nama Panggilan = nama_panggilan
+Tanggal Lahir = tanggal_lahir
+Alamat = alamat
+Jenis Kelamin = jenis_kelamin
+Hafalan = hafalan
+Pendidikan selanjutnya = lanjut
+Asal Sekolah = asal_sekolah
+Nama ayah = ayah
+Nama ibu = ibu
+Anak ke = saudara
+Jumlah Sodara = sodara
+Alasan = alasan
+tau infor = kenal

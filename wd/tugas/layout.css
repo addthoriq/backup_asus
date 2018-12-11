@@ -1,0 +1,187 @@
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+	body{
+		padding: 20px;
+		font-family: Sans-Serif;
+	}
+	#container{
+		max-width: 1000px;
+		margin: auto;
+	}
+	#header{
+		background-color: #474747;
+	}
+	.logo{
+		margin: 10px;
+		width: 70px;
+	}
+	.gbr{
+		float: right;
+		width: 135px;
+		margin: 0px 20px 0px 0px;
+	}
+	#menu{
+	height: 50px;
+	background-color: #7a7a7a;
+	}
+	#menu ul{
+		background-color: #757575;
+	}
+	#menu ul li{
+		float: left;
+		display: block;
+		position: relative;
+		margin: 17px 0px 0px 0px;
+	}
+	#menu ul li a{
+		border-right: 1px solid;
+		border-color: #474747;
+		margin: 0px;
+		padding: 16px;
+		text-decoration: none;
+		color: #ffffff;
+		background-color: #7a7a7a;
+	}
+	#menu ul li a:hover{
+		background-color: #606060;
+	}
+	.dropdown{
+		width: 76px;
+		height: 40px;
+	}
+	.dropdown .dropdown-isi{
+		display: none;
+		margin-top: 15px;
+		width: 125px;
+	}
+	#menu ul li.dropdown .dropdown-isi a{
+		display: block;
+		border-right: none;
+		border-bottom: 1px solid;
+		border-color: #474747;
+	}
+	.dropdown:hover .dropdown-isi{
+		display: block;
+	}
+		#container #main{
+			height: 900px;
+		}
+		#container #main #side{
+			float: right;
+			background-color: #dddddd;
+			width: 30%;
+			min-height: 900px;
+		}
+		#sidbar{
+			font-weight: none;
+			margin: 20px;
+		}
+		#side h1{
+			font-weight: bold;
+			font-size: 20px;
+		}
+		#sidbar li {
+			padding: 10px;
+			margin: 0px;
+		}
+		#sidbar li a{
+			font-style: none;
+			text-decoration: none;
+			color: orange;
+			padding: 5px;
+		}
+		#widget{
+			margin: 20px;
+			max-width: 300px;
+			min-height: 90px;
+			font-size: 12px;
+		}
+		#container #main #isi{
+			width: 68%;
+		}
+		#isi .kontennya{
+			padding: 0px 0px 10px 0px;
+			border-bottom: 1px solid;
+			border-color: #dddddd;
+			padding: 2px;
+		}
+		.kontennya .foto img{
+			margin: 5px;
+			width: 25%;
+		}
+		.kontennya #beritu{
+			margin: 20px 0px;
+			padding-bottom: 20px;
+		}
+		.kontennya .berita{
+			float: right;
+			max-width: 470px;
+			padding: 5px;
+		}
+		.berita a{
+			text-decoration: none;
+			color: orange;
+		}
+		.berita h1{
+			font-weight: bold;
+			font-size: 24px;
+		}
+		#footer{
+			text-align: center;
+			height: 10%;
+			background-color: #474747;
+			color: #ffffff;
+			margin: 0px;
+		}
+		#footer p{
+			padding: 20px 0px;
+		}
+		#footer p a{
+			color: orange;
+		}

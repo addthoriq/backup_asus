@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>JavaScript 1</title>
+		<script type="text/javascript">
+			function kece()
+			{
+				var a=document.getElementById('kece');
+				a.innerHTML="<img src=kece.jpg width=70>";
+			}
+			
+			function ganteng()
+			{
+				var b=document.getElementById('ganteng');
+				b.innerHTML="<img src=ganteng.jpg width=150>";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Ayo Belajar JS</h1>
+			<p>
+			Santri sedang belajar JS, silahkan pencet tombol di bawah
+			</p>
+		<table>
+			<tr>
+			<td><button id="coba" onclick="kece()">Kece</button></td>
+			<td><button id="coba1" onclick="ganteng()">Ganteng</button></td>
+			</tr>
+			<tr>
+			<td><div id="kece"></div></td>
+			<td><div id="ganteng"></div></td>
+			</tr>
+		</table>
+
+	</body>
+</html>

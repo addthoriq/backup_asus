@@ -1,0 +1,197 @@
+<html>
+ <head>
+  <title>Pendaftaran Pendaftaran K3</title>
+ </head>
+ <body>
+   <center>
+    <img src="mawi.png" width="20%">
+   <br>
+   <h1>PENDAFTARAN PELATIHAN AK3U</h1>
+   <p>Isilah formulir registrasi secara lengkap dan benar</p>
+   <hr>
+   </center>
+   <br>
+  <table align="center" border=1>
+  <form>
+  <tr>
+   <td colspan=2><b><hr>DATA PRIBADI</b><br>
+  <hr></td>
+   </tr>
+   <tr>
+    <td>Nama Lengkap</td>
+    <td><input type="text" size="30" name="nama" id="nama" placeholder="Isi Sesuai KTP"/>
+   </tr>
+   <tr>
+    <td>Jenis Kelamin</td>
+    <td><input type="radio" name="jlk" id="pria" value="pria"/>
+     <label>Pria</label><br>
+     <input type="radio" name="jlk" id="wanita" value="wanit"/>
+     <label>Wanita</label></td>
+   </tr>
+   <tr>
+    <td>Tempat Lahir</td>
+    <td><input type="text" size=30 name="tl" id="tl"/></td>
+   </tr>
+   <tr>
+    <td>Tanggal Lahir</td>
+    <td><input type="text" size=5 name="tgl" id="tgl" placeholder="Tanggal"/> - 
+        <input type="text" size=5 name="bln" id="bln" placeholder="Bulan"/> - 
+        <input type="text" size=10 name="thn" id="thn" placeholder="Tahun"/></td>
+   </tr>
+   <tr>
+    <td>Alamat (Sesuai KTP)</td>
+    <td><textarea name="Alamat" cols=30 row=4></textarea>
+   </tr>
+   <tr>
+    <td>Alamat (Untuk Pengiriman Sertifikat)</td>
+    <td><textarea name="alamat2" cols=30 row=4></textarea>
+   </tr>
+   <tr>
+    <td>Agama</td>
+    <td><input type="text"size=15 name="agama" id="agama"/>
+   </tr>
+   <tr>
+    <td>Email</td>
+    <td><input type="text" size=30 name="email" id="email" placeholder="example@example.com"/>
+   </tr>
+   <tr>
+    <td>Phone Number</td>
+    <td><input type="text" size=10 name="kode" id="kode" placeholder="Kode Area"/> - <input type="text" size=15 name="nomor" id="nomor" placeholder="Nomer Handphone"/></td>
+   </tr>
+   <tr>
+    <td>No. Handphone</td>
+    <td><input type="text" size=15 name="hp" id="hp"/></td>
+   </tr>
+   <tr>
+    <td>Golongan Darah</td>
+    <td><select name="goldar" id="goldar">
+        <option value=""></option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option></select></td>
+   </tr>
+   <tr>
+    <td>Ukuran Polo Shirt</td>
+    <td><select name="ukuran" id="ukuran">
+        <option value=""></option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option></select></td>
+   </tr>
+   <tr>
+    <td>Pas Foto</td>
+    <td><input type="file" name="poto"/>
+   </tr>
+   <tr>
+    <td>Sumber Informasi Pelatihan</td>
+    <td><select name="info" id="info">
+        <option value=""></option>
+        <option value="socmed">Sosial Media</option>
+        <option value="wa">WhatsApp</option>
+        <option value="teman">Teman</option>
+        <option value="pamflet">Pamflet</option>
+        <option value="dll">Lainnya</option></select></td>
+   </tr>
+   <tr>
+    <td>Referensi (Nama orang yang merekomendasikan)</td>
+    <td><input type="text" size=15 name="ref" id="ref"/>
+   </tr>
+  <tr>
+   <td colspan=2><b><hr>DATA PENDIDIKAN</b><br>
+   <p>Persyaratan pendidikan minimal peserta pelatihan adalah Diploma atau Mahasiswa Reguler tingkat akhir atau Semester 8</p>
+  <hr></td>
+  </tr>
+   <tr>
+    <td>Pendidikan Terakhir</td>
+    <td><select name="pend" id="pend">
+        <option value=""></option>
+        <option value="mhs">Mahasiswa Semester Akhir</option>
+        <option value="dpl">Diploma</option>
+        <option value="s1">S1</option>
+        <option value="s2">S2</option></td>
+   </tr>
+   <tr>
+    <td>Asal Universitas</td>
+    <td><input type="text" size=30 name="univ" id="univ"/>
+   </tr>
+   <tr>
+    <td>Jurusan</td>
+    <td><input type="text" size=30 name="jurusan" id="jurusan"/>
+   </tr>
+   <tr>
+    <td>Status Pekerjaan</td>
+    <td><select name="kerja" id="kerja">
+        <option value=""></option>
+        <option value="mhs">Mahasiswa</option>
+        <option value="fg">Freshgraduate</option>
+        <option value="belum">Belum Bekerja</option>
+        <option value="sudah">Sudah Bekerja</option>
+   </tr>
+   <tr>
+   <td colspan=2><b><hr>DATA PEKERJAAN</b><br>
+  <p>Data ini tidak perlu diisi bagi mahasiswa atau fresh graduate</p>
+  <hr></td>
+  </tr>
+  <tr>
+   <td>Nama Perusahaan</td>
+   <td><input type="text" size=15 name="perusahaan" id="perusahaan"/>
+  </tr>
+  <tr>
+   <td>Alamat Perusahaan</td>
+   <td><textarea name="almt2" id="almt2" cols=30 row=40></textarea>
+  </tr>
+  <tr>
+   <td>Departemen</td>
+   <td><input type="text" size=15 name="dept" id="dept"/> 
+  </tr>
+  <tr>
+   <td>Posisi / Jabatan</td>
+   <td><input type="text" size=15 name="posisi" id="posisi"/>
+  </tr>
+  <tr>
+   <td>Pengalaman Kerja Lainnya</td>
+   <td><textarea name="pengalaman" id="pengalaman" cols=30 row=40></textarea>
+  </tr>
+  <tr>
+   <td colspan=2><b><hr>PROGRAM PELATIHAN/PEMBINAAN</b><br>
+  <p>Isi data pada kolom sesuai dengan program pembinaan yang ingin anda ikuti (lihat jadwal tahun 2018 sebagai referensi</p>
+  <hr></td>
+   </tr>
+   <tr>
+    <td>Judul Pelatihan/Pembinaan</td>
+    <td><select name="jpl" id="jpl">
+        <option value=""></option>
+        <option value="calon">Calon Ahli K3 Sertifikasi KEMNAKER RI</option></select>
+   </tr>
+   <tr>
+    <td>Lokasi Pelaksanaan</td>
+    <td><select name="lks" id="lks">
+        <option value=""></otion>
+        <option value="jog">Tjokro Style Hotel Yogyakarta</otion>
+   </tr>
+   <tr>
+    <td>Tanggal Pelaksanaan AK3U</td>
+    <td><select name="tgl2" id="tgl2">
+        <option value=""></option>
+        <option value="okt">15 - 27 Oktober 2018</option>
+        <option value="des">26 Nov - 8 Des 2018</option></select>
+   </tr>
+   <tr>
+    <td>Paket Pelatihan AK3U</td>
+    <td><select name="paket" id="paket">
+        <option value=""></option>
+        <option value="mhs/fg">Mahasiswa/Fresh Graduate</option>
+        <option value="umum">Umum/Perusahaan</option>
+        <option value="all">All In Service/Menginap (Superior Room/Twin Share)</option>
+   </tr>
+   <tr>
+    <td></td>
+    <td><input type="submit" name="submit" value="Submit"/>
+   </tr>
+  </form>
+  </table>
+ </body>
+</html>

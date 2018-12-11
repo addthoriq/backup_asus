@@ -1,0 +1,44 @@
+.kotak{
+			width: 25%;
+			height: 400px;
+			border:1px solid;
+			margin:auto;
+			margin-top: 15px;
+			border-color: #dedfe0;
+			background-color: white;
+		}
+		.imageig{
+			margin-top: 15px;
+			width: 200px;
+		}
+		.logoig{
+			margin-top: 15px;
+			margin-bottom: 18px;
+			width: 40px;
+		}
+		.text1{
+			font:16px Arial;
+		}
+		.katok{
+			height: 25px;
+		}
+		#pass{
+			margin-top: 5px;
+		}
+		.tombol{
+			width: 260px;
+			height: 30px;
+			background-color: #2a82fc;
+			color: #ffffff;
+			margin-top: 10px;
+		}
+		.isi{
+			margin-top: 15px;
+			font: 12px Arial;
+			text-align: center;
+		}
+		.ngisor{
+			margin-top: 63px;
+			font: 12px Verdana;
+			text-align: center;
+		}

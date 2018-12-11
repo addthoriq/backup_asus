@@ -1,0 +1,654 @@
+<html>
+	<head>
+		<title>PONPES IT AL HIKMAH</title>
+		<link rel="shortcut icon" href="logoah.jpg"/>
+		<link rel="stylesheet" type="text/css" href="navigasi.css"/>
+		<style rel="text/css">
+			nav ul li.active a{ /* menu aktif */
+				padding: 25px 20px 25px 20px;
+				background-color: #ffffff;
+				color: #30822d;
+			}
+
+			/* Page 1 */
+			.gambar-background{
+				background-image: url("ithmah.jpg");
+				background-size: 1500px;
+				background-position: center;
+				height: 600px;
+				margin-top: 80px;
+			}
+			.background .tulisan-bg{
+				top: 15%;
+				right: 3%;
+				position: absolute;
+				color: #ffffff;
+				font: 24px Sans-Serif;
+				text-align: right;
+			}
+			.background .tulisan-bg h1{
+				font: 48px Sans-Serif;
+				text-transform: uppercase;
+				text-align: right;
+				font-weight: bold;
+			}
+			
+			/* Tombol daftar daftar */
+			.daftar{
+				top: 73%;
+				right: 5%;
+				position: absolute;
+				background-color: #30822d;
+				border-radius: 8px;
+				border: none;
+				width: 230px;
+				height: 60px;
+				cursor: pointer;
+				transition-duration: 0.5s;
+				display: inline-block;
+			}
+			.daftar:hover{
+				background-color: #46bc42;				
+			}
+			.daftar a{
+				font: 20px Sans-Serif;
+				text-align: center;
+				color: #ffffff;
+				text-decoration: none;
+				padding: 18px 25px;
+				margin: 0px;
+			}
+			
+			/* Page 2 */
+			.info {
+				height: 500px;
+			}
+			.isi-info{
+				margin-top: 150px;
+			}
+			.isi-info #judul-page2{
+				font: 33px Sans-Serif;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin: 50px auto;
+				color: #46bc42;
+			}
+			/* Gambar SMA */
+			.sma{
+				width: 200px;
+				margin: 0px 0px 0px 300px;
+				display: block;
+			}
+			.sma .gambar_sma{
+				width: 200px;
+				opacity: 1;
+				display: block;
+				backface-visibility: hidden;
+				transition: .5s ease;
+			}
+			.sma a{
+				opacity: 0;
+				transition: .5s ease;
+				position: absolute;
+				margin: -110px 25px;
+				text-decoration: none;
+				font-family: Sans-Serif;
+				background-color: #46bc42;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			.sma:hover .gambar_sma{
+				opacity: 0.3;
+			}
+			.sma:hover a{
+				opacity: 1;
+			}
+			.sma h1{
+				text-align: center;
+				font: 40px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;
+			}
+			/* Gambar MTs */
+			.mts{
+				width: 150px;
+				height: 300px;
+				margin: -295px 0px 0px 820px;
+				display: block;
+			}
+			.mts .gambar_mts{
+				width: 150px;
+				height: 205px;
+				margin: 0px;
+				transition: .5s ease;
+				opacity: 1;
+				backface-visibility: hidden;
+			}
+			.mts a{
+				position: absolute;
+				margin: -110px 10px;
+				text-decoration: none;
+				font-family: Sans-Serif;
+				background-color: #46bc42;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+				opacity: 0;
+				transition: .5s ease;
+			}
+			.mts:hover .gambar_mts{
+				opacity: 0.3;
+			}
+			.mts:hover a{
+				opacity: 1;
+			}
+			.mts h1{
+				text-align: center;
+				font: 40px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;
+			}
+			
+			/* Page 3 */
+			.gambar-prestasi{
+				background-image: url("ngaji.jpg");
+				background-size: 1350px;
+				background-position: center;
+				height: 600px;
+				margin-top: 80px;
+			}
+			.prestasi .tulisan-prestasi{
+				margin-top: 80px;
+				right: 3%;
+				position: absolute;
+				color: #ffffff;
+				font: 24px Sans-Serif;
+				text-align: right;
+			}
+			.prestasi .tulisan-prestasi h1{
+				font: 36px Sans-Serif;
+				text-transform: uppercase;
+				text-align: right;
+				font-weight: bold;
+			}
+			/* Tombol tahfidz */
+			.tahfidz{
+				margin-top: 450px;
+				right: 5%;
+				position: absolute;
+				background-color: #30822d;
+				border-radius: 8px;
+				border: none;
+				width: 230px;
+				height: 60px;
+				cursor: pointer;
+				transition-duration: 0.5s;
+				display: inline-block;
+			}
+			.tahfidz:hover{
+				background-color: #46bc42;				
+			}
+			.tahfidz a{
+				font: 20px Sans-Serif;
+				text-align: center;
+				color: #ffffff;
+				text-decoration: none;
+				padding: 18px 35px;
+				margin: 0px;
+			}
+			
+			/* Page 4 */
+			.galeri {
+				height: 500px;
+			}
+			.isi-galeri{
+				margin-top: 150px;
+			}
+			.isi-galeri #judul-page4{
+				font: 33px Sans-Serif;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin: 50px auto;
+				color: #46bc42;
+			}
+			
+			/* Gambar 1 */
+			.gambarsatu{
+				width: 300px;
+				margin: 0px 0px 0px 100px;
+				display: block;
+			}
+			.gambarsatu .gambar1{
+				width: 300px;
+				opacity: 1;
+				display: block;
+				backface-visibility: hidden;
+				transition: .5s ease;
+			}
+			.gambarsatu a{
+				opacity: 0;
+				transition: .5s ease;
+				position: absolute;
+				margin: -130px 55px;
+				text-decoration: none;
+				font-family: Sans-Serif;
+				background-color: #46bc42;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			.gambarsatu:hover .gambar1{
+				opacity: 0.3;
+			}
+			.gambarsatu:hover a{
+				opacity: 1;
+			}
+			.gambarsatu h1{
+				text-align: center;
+				font: 40px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;
+				margin: 18px 0px 0px 0px;
+			}
+			
+			/* Gambar 2 */
+			.gambardua{
+				width: 300px;
+				margin: -290px 0px 0px 500px;
+				display: block;
+			}
+			.gambardua .gambar2{
+				width: 300px;
+				opacity: 1;
+				display: block;
+				backface-visibility: hidden;
+				transition: .5s ease;
+			}
+			.gambardua a{
+				opacity: 0;
+				transition: .5s ease;
+				position: absolute;
+				margin: -130px 90px;
+				text-decoration: none;
+				font-family: Sans-Serif;
+				background-color: #46bc42;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			.gambardua:hover .gambar2{
+				opacity: 0.3;
+			}
+			.gambardua:hover a{
+				opacity: 1;
+			}
+			.gambardua h1{
+				text-align: center;
+				font: 40px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;
+				margin: 18px 0px 0px 0px;
+			}
+			.gambardua p{
+				margin: 10px 0px 0px 0px;
+				text-align: center;
+				font: 16px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;				
+			}
+
+			/* Gambar 3 */
+			.gambartiga{
+				width: 340px;
+				margin: -320px 0px 0px 900px;
+				display: block;
+			}
+			.gambartiga .gambar3{
+				width: 340px;
+				opacity: 1;
+				display: block;
+				backface-visibility: hidden;
+				transition: .5s ease;
+				margin-bottom: 0px;
+			}
+			.gambartiga a{
+				opacity: 0;
+				transition: .5s ease;
+				position: absolute;
+				margin: -130px 80px;
+				text-decoration: none;
+				font-family: Sans-Serif;
+				background-color: #46bc42;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			.gambartiga:hover .gambar3{
+				opacity: 0.3;
+			}
+			.gambartiga:hover a{
+				opacity: 1;
+			}
+			.gambartiga h1{
+				text-align: center;
+				font: 40px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;
+				margin: 18px 0px 0px 0px;
+			}
+			.gambartiga p{
+				margin: 10px 0px 0px 0px;
+				text-align: center;
+				font: 16px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;				
+			}
+			
+			/* Page 5 */
+			.gambar-psb{
+				background-image: url("kajian.jpg");
+				background-size: 1500px;
+				background-position: center;
+				height: 600px;
+				margin-top: 80px;
+			}
+			.psb .isi-psb{
+				right: 3%;
+				position: absolute;
+				color: #ffffff;
+				font: 24px Sans-Serif;
+				text-align: right;
+				margin-top: 50px;
+			}
+			.psb .isi-psb h1{
+				font: 48px Sans-Serif;
+				text-transform: uppercase;
+				text-align: right;
+				font-weight: bold;
+			}
+			
+			/* Tombol daftar daftar */
+			.tombol-psb{
+				right: 5%;
+				position: absolute;
+				background-color: #30822d;
+				border-radius: 8px;
+				border: none;
+				width: 230px;
+				height: 60px;
+				cursor: pointer;
+				transition-duration: 0.5s;
+				display: inline-block;
+				margin-top: 400px;
+			}
+			.tombol-psb:hover{
+				background-color: #46bc42;				
+			}
+			.tombol-psb a{
+				font: 20px Sans-Serif;
+				text-align: center;
+				color: #ffffff;
+				text-decoration: none;
+				padding: 18px 35px;
+				margin: 0px;
+			}
+
+			/* Page 6 */
+			.kontak {
+				height: 500px;
+			}
+			.isi-kontak{
+				margin-top: 100px;
+			}
+			.isi-kontak #judul-page6{
+				font: 33px Sans-Serif;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin: 50px auto;
+				color: #46bc42;
+			}
+			/* Gambar 1 */
+			.fb{
+				width: 200px;
+				margin: 0px 0px 0px 100px;
+				display: block;
+			}
+			.fb .gambarfb{
+				width: 200px;
+				opacity: 1;
+				display: block;
+				backface-visibility: hidden;
+				transition: .5s ease;
+			}
+			.fb a{
+				opacity: 0;
+				transition: .5s ease;
+				position: absolute;
+				margin: -120px 20px;
+				text-decoration: none;
+				font-family: Sans-Serif;
+				background-color: #46bc42;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			.fb:hover .gambarfb{
+				opacity: 0.3;
+			}
+			.fb:hover a{
+				opacity: 1;
+			}
+			.fb h1{
+				text-align: center;
+				font: 36px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;
+				margin: 18px 0px 0px 0px;
+			}
+			
+			/* Gambar 2 */
+			.maps{
+				width: 300px;
+				height: 300px;
+				margin: -260px 0px 0px 500px;
+				display: block;
+			}
+			.maps iframe{
+				width: 300px;
+				height: 220px;
+				opacity: 1;
+				display: block;
+				backface-visibility: hidden;
+				transition: .5s ease;
+			}
+			.maps h1{
+				text-align: center;
+				font: 40px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;
+				margin: 9px 0px 0px 0px;
+			}
+
+			/* Gambar 3 */
+			.ig{
+				width: 200px;
+				margin: -300px 0px 0px 1000px;
+				display: block;
+			}
+			.ig .gambarig{
+				width: 210px;
+				opacity: 1;
+				display: block;
+				backface-visibility: hidden;
+				transition: .5s ease;
+				margin-bottom: 0px;
+			}
+			.ig a{
+				opacity: 0;
+				transition: .5s ease;
+				position: absolute;
+				margin: -120px 35px;
+				text-decoration: none;
+				font-family: Sans-Serif;
+				background-color: #46bc42;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			.ig:hover .gambarig{
+				opacity: 0.3;
+			}
+			.ig:hover a{
+				opacity: 1;
+			}
+			.ig h1{
+				text-align: center;
+				font: 33px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;
+				margin: 18px 0px 0px 0px;
+			}
+			.ig p{
+				margin: 10px 0px 0px 0px;
+				text-align: center;
+				font: 16px Sans-Serif;
+				color: #46bc42;
+				cursor: pointer;				
+			}
+		</style>
+	
+	</head>
+	
+	<body>
+	
+		<!-- Page 1 -->
+		<div class="background">
+		<div class="tulisan-bg">
+				<h1>bebas dpp 5 juta!</h1>
+				<h1>jalur khusus psb 2019</h1>
+				<p>Bismillah. Pondok Pesantren Islam Terpadu (PPIT) Al Hikmah<br>Karaggede, Boyolali membuka Penerimaan Santri Baru (PSB)<br>Jalur Khusus/Prestasi untuk jenjang pendidikan tingkat<br>MTs dan SMA Tahun Ajaran 2019/2020.</p>
+		</div>	
+		<button type="submit" class="daftar"><a href="psb.html">Lihat Lebih Lanjut</a></button>
+		<div class="gambar-background"></div>
+		</div>
+
+		<!-- Page 2 -->
+		<div class="info" id="page2">
+			<div class="isi-info">
+				<h1 id="judul-page2"> jenjang pendidikan </h1>
+				<div class="sma">
+					<img src="logosma.png" class="gambar_sma"/>
+					<a href="sma.html">SMA IT Al Hikmah</a>
+					<h1>SMA</h1>
+				</div>
+				<div class="mts">
+					<img src="logomts.png" class="gambar_mts"/>
+					<a href="mts.html">MTsT Al HIkmah</a>
+					<h1>MTsT</h1>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Page 3 -->
+		<div class="prestasi" id="page3">
+			<div class="tulisan-prestasi">
+				<h1>wisuda ppit al hikmah, 60 persen</h1>
+				<h1>lulusan sma hafidz 30 juz</h1>
+				<p>BOYOLALI - Prestasi membanggakan diukir santri SMA Islam Terpadu (SMAIT)<br>dan Pondok Pesantren Islam Terpadu (PPIT) Al Hikmah Karanggede<br>Boyolali dalam acara Wisuda Akhirussanah (13/5/2018). Acara yang digelar di Aula <br>PPIT Al Hikmah Karanggede Boyolali ini dihadiri para orang tua <br>wisudawan serta Pengurus dan Dewan Pembina Yayasan Al Hikmah Boyolali (YABI).</p></div>
+			<button type="submit" class="tahfidz"><a href="tahfidz.html">Lihat lebih lanjut</a></button>
+			<div class="gambar-prestasi"></div>
+		</div>
+		
+		<!-- Page 4 -->
+		<div class="galeri" id="page4">
+			<div class="isi-galeri">
+				<h1 id="judul-page4"> KEGIATAN SANTRI PP IT AL HIKMAH </h1>
+				<div class="gambarsatu">
+					<img src="ndaki.jpg" class="gambar1"/>
+					<a href="sma.html">Rihlah & Tadabbur Alam</a>
+					<h1>MENDAKI</h1>
+				</div>
+				<div class="gambardua">
+					<img src="sapala.jpg" class="gambar2"/>
+					<a href="mts.html">Qowiyyul Jism</a>
+					<h1>SATMPALA</h1>
+					<p>Santri Muda Pecinta Alam</p>
+				</div>
+				<div class="gambartiga">
+					<img src="sadaro.JPG" class="gambar3"/>
+					<a href="mts.html">Da'wah ke Masyarakat</a>
+					<h1>SDR</h1>
+					<p>Safari Da'wah Ramdhan</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Page 5 -->
+		<div class="psb" id="page5">
+		<div class="isi-psb">
+				<h1>pendaftaran santri baru</h1>
+				<h1>tahun ajaran 2019/2020</h1>
+				<p>Pondok Pesantren Islam Terpadu (PPIT) Al Hikmah, Karanggede-Boyolali<br>Telah membuka Pendaftaran Santri Baru tahun ajaran 2019/2020<br>Pendaftaran dibuka dari 22 Oktober hingga 10 November 2018</p>
+		</div>	
+		<button type="submit" class="tombol-psb"><a href="psb.html" target="_blank">Daftar Sekarang</a></button>
+		<div class="gambar-psb"></div>
+		</div>
+
+		<!-- Page 6 -->
+		<div class="kontak" id="page6">
+			<div class="isi-kontak">
+				<h1 id="judul-page6"> KONTAK KAMI DI </h1>
+				<div class="fb">
+					<img src="fb.png" class="gambarfb"/>
+					<a href="https://www.facebook.com/ppitalhikmah/">Fanpage Facebook</a>
+					<h1>FACEBOOK</h1>
+				</div>
+				<div class="maps">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.966179290709!2d110.63818266477546!3d-7.357687844690569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a746671e1eb49%3A0xb0fb7b818cc3d732!2sPondok+Pesantren+Islam+Terpadu+Al+Hikmah!5e0!3m2!1sid!2sid!4v1540299400189" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<h1>ALAMAT</h1>
+				</div>
+				<div class="ig">
+					<img src="ig.png" class="gambarig"/>
+					<a href="https://www.instagram.com/ppit_alhikmah_boyolali/">Official Instagram</a>
+					<h1>INSTAGRAM</h1>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<div class="footer">
+				<h1>www.popistra.com</h1>
+				<p><i>created by: addthoriq</i></p>
+		</div>
+
+		<!-- MENU NAVIGASI -->
+			<center>
+			<nav>
+				<ul>
+					<li class="active"><a href="index.html">home</a></li>
+					<li class="dropdown"><a href="#page2" id="unit">informasi</a>
+						<div class="konten">
+							<a href="ponpes.html">info ponpes</a>
+							<a href="sma.html">info sma it</a>
+							<a href="mts.html">info mts t</a>
+						</div>
+					</li>
+					<li class="dropdown"><a href="#page3">capaian tahfidz</a>
+						<div class="konten">
+							<a href="santriwan.html">santriwan</a>
+							<a href="santriwati.html">santriwati</a>
+						</div>
+					</li>
+					<li><a href="#page4">galeri foto</a></li>
+					<li><a href="#page5">pendaftaran santri baru</a></li>
+					<li><a href="#page6">kontak kami</a></li>
+				</ul>
+			</nav>
+			</center>
+				
+	</body>
+</html>
